@@ -11,9 +11,8 @@
 4||10|c|G
 4||10|C|G
 4||10|T|G</Grants>
-      <IntrospectionStateNumber>1298</IntrospectionStateNumber>
       <ServerVersion>18.6</ServerVersion>
-      <StartupTime>1791884722</StartupTime>
+      <StartupTime>1792396242</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -809,7 +808,6 @@ false Zulu
 14860||10|C|G
 14860||-9223372036854775808|U|G
 14860||10|U|G</Grants>
-      <IntrospectionStateNumber>1298</IntrospectionStateNumber>
       <ObjectId>16564</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -817,56 +815,56 @@ false Zulu
       <ObjectId>16771</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
-    <role id="4" parent="1" name="pg_checkpoint">
-      <ObjectId>4544</ObjectId>
-    </role>
-    <role id="5" parent="1" name="pg_create_subscription">
-      <ObjectId>6304</ObjectId>
-    </role>
-    <role id="6" parent="1" name="pg_database_owner">
+    <role id="4" parent="1" name="pg_database_owner">
       <ObjectId>6171</ObjectId>
     </role>
-    <role id="7" parent="1" name="pg_execute_server_program">
-      <ObjectId>4571</ObjectId>
+    <role id="5" parent="1" name="pg_read_all_data">
+      <ObjectId>6181</ObjectId>
     </role>
-    <role id="8" parent="1" name="pg_maintain">
-      <ObjectId>6337</ObjectId>
+    <role id="6" parent="1" name="pg_write_all_data">
+      <ObjectId>6182</ObjectId>
     </role>
-    <role id="9" parent="1" name="pg_monitor">
+    <role id="7" parent="1" name="pg_monitor">
       <ObjectId>3373</ObjectId>
       <RoleGrants>3374
 3375
 3377</RoleGrants>
     </role>
-    <role id="10" parent="1" name="pg_read_all_data">
-      <ObjectId>6181</ObjectId>
-    </role>
-    <role id="11" parent="1" name="pg_read_all_settings">
+    <role id="8" parent="1" name="pg_read_all_settings">
       <ObjectId>3374</ObjectId>
     </role>
-    <role id="12" parent="1" name="pg_read_all_stats">
+    <role id="9" parent="1" name="pg_read_all_stats">
       <ObjectId>3375</ObjectId>
     </role>
-    <role id="13" parent="1" name="pg_read_server_files">
+    <role id="10" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+    </role>
+    <role id="11" parent="1" name="pg_read_server_files">
       <ObjectId>4569</ObjectId>
     </role>
-    <role id="14" parent="1" name="pg_signal_autovacuum_worker">
-      <ObjectId>6392</ObjectId>
+    <role id="12" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
     </role>
-    <role id="15" parent="1" name="pg_signal_backend">
+    <role id="13" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+    </role>
+    <role id="14" parent="1" name="pg_signal_backend">
       <ObjectId>4200</ObjectId>
     </role>
-    <role id="16" parent="1" name="pg_stat_scan_tables">
-      <ObjectId>3377</ObjectId>
+    <role id="15" parent="1" name="pg_checkpoint">
+      <ObjectId>4544</ObjectId>
+    </role>
+    <role id="16" parent="1" name="pg_maintain">
+      <ObjectId>6337</ObjectId>
     </role>
     <role id="17" parent="1" name="pg_use_reserved_connections">
       <ObjectId>4550</ObjectId>
     </role>
-    <role id="18" parent="1" name="pg_write_all_data">
-      <ObjectId>6182</ObjectId>
+    <role id="18" parent="1" name="pg_create_subscription">
+      <ObjectId>6304</ObjectId>
     </role>
-    <role id="19" parent="1" name="pg_write_server_files">
-      <ObjectId>4570</ObjectId>
+    <role id="19" parent="1" name="pg_signal_autovacuum_worker">
+      <ObjectId>6392</ObjectId>
     </role>
     <role id="20" parent="1" name="postgres">
       <BypassRls>1</BypassRls>
@@ -4329,27 +4327,13 @@ false Zulu
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <LastIntrospectionL1Xid>1298</LastIntrospectionL1Xid>
-      <LastIntrospectionL2Xid>1298</LastIntrospectionL2Xid>
-      <LastIntrospectionL3Xid>1298</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
       <LastIntrospectionLocalTimestamp>2026-10-13.10:20:15</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>546</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
-    <routine id="273" parent="272" name="return_next_value">
-      <ArgumentsDefinition>table_name text, column_name text</ArgumentsDefinition>
-      <DetailsLevel>3</DetailsLevel>
-      <ObjectId>25091</ObjectId>
-      <ResultsDefinition>integer</ResultsDefinition>
-      <Rows>0.0</Rows>
-      <SourceTextLength>60</SourceTextLength>
-      <StateNumber>1296</StateNumber>
-      <LanguageName>plpgsql</LanguageName>
-      <OwnerName>postgres</OwnerName>
-    </routine>
-    <sequence id="274" parent="272" name="spec_table_id_seq">
+    <sequence id="273" parent="272" name="spec_table_id_seq">
       <DetailsLevel>2</DetailsLevel>
       <ObjectId>25081</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
@@ -4358,67 +4342,5 @@ false Zulu
       <StoredType>integer|0s</StoredType>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <table id="275" parent="272" name="spec_table">
-      <DetailsLevel>2</DetailsLevel>
-      <ObjectId>25082</ObjectId>
-      <StateNumber>1294</StateNumber>
-      <AccessMethodId>2</AccessMethodId>
-      <OwnerName>postgres</OwnerName>
-    </table>
-    <argument id="276" parent="273">
-      <ArgumentDirection>R</ArgumentDirection>
-      <StoredType>integer|0s</StoredType>
-    </argument>
-    <argument id="277" parent="273" name="table_name">
-      <Position>1</Position>
-      <StoredType>text|0s</StoredType>
-    </argument>
-    <argument id="278" parent="273" name="column_name">
-      <Position>2</Position>
-      <StoredType>text|0s</StoredType>
-    </argument>
-    <column id="279" parent="275" name="id">
-      <DefaultExpression>nextval(&apos;spec_table_id_seq&apos;::regclass)</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StateNumber>1294</StateNumber>
-      <StoredType>integer|0s</StoredType>
-      <SequenceId>25081</SequenceId>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="280" parent="275" name="name">
-      <Position>2</Position>
-      <StateNumber>1294</StateNumber>
-      <StoredType>text|0s</StoredType>
-      <TypeId>25</TypeId>
-    </column>
-    <column id="281" parent="275" name="column_name">
-      <Position>3</Position>
-      <StateNumber>1294</StateNumber>
-      <StoredType>text|0s</StoredType>
-      <TypeId>25</TypeId>
-    </column>
-    <column id="282" parent="275" name="max_value">
-      <Position>4</Position>
-      <StateNumber>1294</StateNumber>
-      <StoredType>integer|0s</StoredType>
-      <TypeId>23</TypeId>
-    </column>
-    <index id="283" parent="275" name="spec_table_pkey">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>25089</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>1294</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <key id="284" parent="275" name="spec_table_pkey">
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>25090</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>1294</StateNumber>
-      <UnderlyingIndexId>25089</UnderlyingIndexId>
-    </key>
   </database-model>
 </dataSource>
